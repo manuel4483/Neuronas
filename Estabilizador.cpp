@@ -256,7 +256,7 @@ int main(int argc, char **argv)
         if(canvas.cols > 1920) {
             resize(canvas, canvas, Size(canvas.cols/2, canvas.rows/2));
         }
-	outputVideo << canvas;
+	outputVideo.write(cur2);
         imshow("before and after", canvas);
 
         //char str[256];
